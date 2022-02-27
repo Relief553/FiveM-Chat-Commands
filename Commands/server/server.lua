@@ -115,26 +115,3 @@ RegisterCommand("marketplace", function(source, args, raw)
     end
 end)
 end
-
--- Informational Commands -- 
-
--- Discord Command
-if Config.Discord == true then
-	RegisterCommand('discord', function()
-		TriggerClientEvent('chatMessage', -1, "^*Discord Server: ^_" .. DiscordLink, {245, 191, 66})
-	end, false)
-end
-
--- TeamSpeak Command
-if Config.TeamSpeak == true then
-	RegisterCommand('teamspeak', function()
-		TriggerClientEvent('chatMessage', -1, "^*TeamSpeak Server: ^_" .. TeamSpeakLink, {245, 191, 66})
-	end, false)
-end
-
--- Website Command
-if Config.Website == true then
-	RegisterCommand('website', function()
-		TriggerClientEvent('chatMessage', -1, "^*Website: ^_" .. WebsiteLink, {245, 191, 66})
-	end, false)
-end
