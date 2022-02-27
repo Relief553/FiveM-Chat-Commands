@@ -3,20 +3,18 @@ game "gta5"
 
 -- Resource Info
 name 'Chat Commands'
-description 'FiveM Chat Commands + DV'
+description 'FiveM Chat Commands'
 author 'Relief Development'
-version '1.0.0'
+version '1.0.1'
 
 -- Script
 shared_script 'config.lua'
 
 client_scripts {
-	'client/client.lua',
-	'client/delveh.lua'
+	'client/client.lua'
 }
 server_script {
-	'server/server.lua',
-	'server/delveh.lua'
+	'server/server.lua'
 }
 
 --					 ===================================
