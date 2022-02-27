@@ -1,2 +1,6 @@
 # FiveM-Chat-Commands
-Standalone FiveM chat commands
+
+
+Need Help? Well Join our discord https://discord.gg/etagEJsawf
+
+					 Copyright © 2022 Relief Development
