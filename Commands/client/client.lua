@@ -27,13 +27,17 @@ Citizen.CreateThread(function()
    TriggerEvent('chat:addSuggestion', '/marketplace', 'Makes a Chat suggestion for selling goods', {
       { name="Message", help="/marketplace Selling my Shoes $25"}
    })
-   TriggerEvent('chat:addSuggestion', '/discord', 'Sends Discord Link', {
-      { name="Message", help="/discord"}
-   })
-   TriggerEvent('chat:addSuggestion', '/teamspeak', 'Sends Teamspeak Link', {
-      { name="Message", help="/teamspeak"}
-   })
-   TriggerEvent('chat:addSuggestion', '/website', 'Sends website Link', {
-      { name="Message", help="/website"}
-   })
+
+   RegisterCommand("discord", function(source, args, raw)
+        TriggerEvent('chat:addMessage', "^*Discord Server: ^1" .. DiscordLink, {245, 191, 66})
+      end)
+   
+   RegisterCommand("teamspeak", function(source, args, raw) 
+        TriggerEvent('chat:addMessage', "^*TeamSpeak Server: ^1" .. TeamSpeakLink, {255, 0, 0})
+     end)
+     
+   RegisterCommand("website", function(source, args, raw) 
+        TriggerEvent('chat:addMessage', "^*Website: ^1" .. WebsiteLink, {245, 191, 66})
+     end)
+
 end)
